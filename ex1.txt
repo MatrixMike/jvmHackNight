@@ -1,0 +1,18 @@
+HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellpost")).POST().response();
+
+
+int statusCode = response.statusCode();
+      String responseBody = response.body(asString());
+
+
+
+IntStream.range(0,50).forEach( i->{  
+ try{
+
+    HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellpost")).POST().response();
+    System.out.println(response.body(HttpResponse.asString()));
+
+}catch (Exception e){ throw new RuntimeException(e); }
+    }
+    )
+

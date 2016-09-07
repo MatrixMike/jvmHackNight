@@ -1,0 +1,35 @@
+int x = 45;
+2+2
+String twice(String s) {
+return s+s;
+}
+twice ("Mike");
+import java.net.http.*;
+     import static java.net.http.HttpRequest.*;
+     import static java.net.http.HttpResponse.*;
+URL url = new URL("http://j9.melbjvm.com/go/{mhewitt}/jshellput");
+HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellput")).PUT().response();
+response.body(HttpResponse.asString())
+import  java.util.stream.*;
+IntStream.range(0,50).forEach( i->{   }   )
+IntStream.range(0,50).forEach( i->{
+ try{
+    HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellpost")).POST().response();
+    response.body(HttpResponse.asString());
+}catch (Exception e){ throw new RuntimeException(e); }
+    }
+    )
+IntStream.range(0,50).forEach( i->{
+ try{
+    HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellpost")).POST().response();
+    response.body(HttpResponse.asString());
+}catch (Exception e){ throw new RuntimeException(e); }
+    }
+    )
+IntStream.range(0,50).forEach( i->{
+ try{
+    HttpResponse response = HttpRequest.create(new URI("http://j9.melbjvm.com/go/mhewitt/jshellpost")).POST().response();
+    System.out.println(response.body(HttpResponse.asString()));
+}catch (Exception e){ throw new RuntimeException(e); }
+    }
+    )
